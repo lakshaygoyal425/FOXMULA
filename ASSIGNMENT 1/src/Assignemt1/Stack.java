@@ -2,13 +2,6 @@ package Assignemt1;
 
 class Stack
 {
-
-    private static class Node
-    {
-        int data;
-        Node next;
-    }
-
     Node head;
 
     Stack()
