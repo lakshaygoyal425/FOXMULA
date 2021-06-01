@@ -28,7 +28,7 @@ public class Pair {
     public static void main(String[] args) {
         int choice, x;
         int K;
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         ArrayList<Integer> arr = new ArrayList<>();
 
@@ -37,11 +37,11 @@ public class Pair {
             System.out.println("2. Find the Pair");
             System.out.println("3. Exit");
             System.out.println("Enter your choice:");
-            choice = sc.nextInt();
+            choice = scanner.nextInt();
             switch (choice) {
                 case 1:
                     System.out.println("Enter the element:");
-                    int element = sc.nextInt();
+                    int element = scanner.nextInt();
                     arr.add(element);
                     break;
 
@@ -50,7 +50,7 @@ public class Pair {
                         System.out.println("ArrayList is Empty!");
                     } else {
                         System.out.println("Enter The Value K: ");
-                        K = sc.nextInt();
+                        K = scanner.nextInt();
                         pair(arr, K);
                     }
                     break;
