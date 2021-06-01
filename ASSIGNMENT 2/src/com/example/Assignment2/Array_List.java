@@ -7,7 +7,7 @@ public class Array_List {
 
         int choice;
         String str;
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         ArrayList<String> list1 = new ArrayList<>();
 
         while (true) {
@@ -16,11 +16,11 @@ public class Array_List {
             System.out.println("3. Check if the List contains an Element");
             System.out.println("4. Exit");
             System.out.println("Enter your choice:");
-            choice = sc.nextInt();
+            choice = scanner.nextInt();
             switch (choice) {
                 case 1:
                     System.out.println("Enter the Text:");
-                    str = sc.next();
+                    str = scanner.next();
                     list1.add(str);
                     break;
 
@@ -40,7 +40,7 @@ public class Array_List {
                     }
                     else {
                         System.out.println("Enter the Text to be checked:");
-                        str = sc.next();
+                        str = .next();
                         if (list1.contains(str)) {
                             System.out.println("Text Present in List");
                             break;
