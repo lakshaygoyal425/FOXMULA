@@ -7,7 +7,7 @@ public class Traverse_Hashset {
     {
         int choice;
         String str;
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         HashSet<String> set1 = new HashSet<>();
 
@@ -17,12 +17,12 @@ public class Traverse_Hashset {
             System.out.println("2. Traverse the List");
             System.out.println("3. Exit");
             System.out.println("Enter your choice:");
-            choice = sc.nextInt();
+            choice = scanner.nextInt();
             switch(choice)
             {
                 case 1:
                     System.out.println("Enter the text:");
-                    str = sc.next();
+                    str = scanner.next();
                     set1.add(str);
                     break;
 
