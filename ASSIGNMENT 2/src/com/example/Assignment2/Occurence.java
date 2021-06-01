@@ -17,7 +17,7 @@ public class Occurence {
     {
         int choice;
         String str;
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         ArrayList<String> arr = new ArrayList<>();
 
@@ -27,12 +27,12 @@ public class Occurence {
             System.out.println("2. Check if the occurrence of each element");
             System.out.println("3. Exit");
             System.out.println("Enter your choice:");
-            choice = sc.nextInt();
+            choice = scanner.nextInt();
             switch(choice)
             {
                 case 1:
                     System.out.println("Enter the element:");
-                    str = sc.next();
+                    str = scanner.next();
                     arr.add(str);
                     break;
 
