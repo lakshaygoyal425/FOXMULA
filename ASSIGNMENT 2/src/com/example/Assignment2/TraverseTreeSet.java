@@ -1,7 +1,7 @@
 package com.example.Assignment2;
 import java.util.*;
 
-public class Traverse_TreeSet {
+public class TraverseTreeSet {
     public static void main(String[] args)
     {
         int choice;
