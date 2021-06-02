@@ -2,7 +2,7 @@ package com.example.Assignment2;
 import java.util.*;
 
 
-public class Hast_Set {
+public class HastSet {
     public static void main(String[] args) {
         int choice;
         String str;
