@@ -2,7 +2,7 @@ package com.example.Assignment2;
 import java.util.*;
 
 
-public class Traverse_Hashset {
+public class TraverseHashset {
     public static void main(String[] args)
     {
         int choice;
