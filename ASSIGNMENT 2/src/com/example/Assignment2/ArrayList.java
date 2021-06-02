@@ -2,7 +2,7 @@ package com.example.Assignment2;
 import java.util.*;
 
 
-public class Array_List {
+public class ArrayList {
     public static void main (String[] args) {
 
         int choice;
