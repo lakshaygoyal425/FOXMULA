@@ -41,7 +41,7 @@ public class CustomException {
 
         }
         catch (Exception e) {
-            System.out.println("Exception Occured: " + e);
+            System.out.println(e);
         }
     }
 }
