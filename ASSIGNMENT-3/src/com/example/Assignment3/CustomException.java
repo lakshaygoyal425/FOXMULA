@@ -2,8 +2,8 @@ package com.example.Assignment3;
 import java.util.*;
 
 
-class InvalidPrimeOdd extends Exception{
-    public InvalidPrimeOdd(String message) {
+class InvalidOdd extends Exception{
+    public InvalidOdd(String message) {
         super(message);
     }
 }
@@ -24,9 +24,9 @@ public class CustomException {
         return true;
 
     }
-    private static void checkPrimeOdd(int number) throws InvalidPrimeOdd {
+    private static void checkPrimeOdd(int number) throws InvalidOdd {
         if(checkPrime(number) && number%2!=0) {
-            throw new InvalidPrimeOdd("Invalid Number!");
+            throw new InvalidOdd("Invalid Number!");
         }
         else {
             System.out.println("No Exception!");
