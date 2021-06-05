@@ -23,20 +23,20 @@ public class FrequencySort {
             System.out.println(entry.getKey() + " " + entry.getValue());
         }
 
-        List<Integer> values = new ArrayList<>(Map.values());
-        Collections.sort(values);
-
-        Set<Entry<Integer, Integer>> entrySet = Map.entrySet();
-        List<Entry<Integer, Integer>> list = new ArrayList<>(entrySet);
-
-        list.sort(Entry.comparingByValue());
-
-//        System.out.println("Sorted elements: "+ list);
-        System.out.print("Sorted array :");
-        list.forEach(s->{
-            System.out.print(s.getKey()+" ");
+        ArrayList<Map.Entry<Integer, Integer>> list1 = new ArrayList<>(hashMap.entrySet());
+        
+    	Collections.sort(list1, new Comparator<Map.Entry<Integer, Integer>>()
+        {
+           public int compare(Map.Entry<Integer, Integer> comparator1, Map.Entry<Integer, Integer> comparator2)
+            {
+                return (comparator1.getValue()).compareTo(comparator2.getValue());
+            }
         });
-        System.out.println(" ");
+        
+		for(Map.Entry<Integer, Integer> entry : list1)
+        {
+            System.out.println(entry.getKey()+": "+entry.getValue());
+        }
     }
 
 
