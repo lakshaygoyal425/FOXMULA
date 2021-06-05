@@ -6,24 +6,24 @@ public class FrequencySort {
     static void frequencyNumber(ArrayList<Integer> arr, int size)
     {
 
-        HashMap<Integer, Integer> Map = new HashMap<>();
+        HashMap<Integer, Integer> hMap = new HashMap<>();
 
         for (int i=0; i<size; i++) {
-            if (Map.containsKey(arr.get(i))) {
+            if (hMap.containsKey(arr.get(i))) {
 
-                Map.put(arr.get(i), Map.get(arr.get(i)) + 1);
+                hMap.put(arr.get(i), hMap.get(arr.get(i)) + 1);
             }
             else {
 
-                Map.put(arr.get(i), 1);
+                hMap.put(arr.get(i), 1);
             }
         }
 
-        for (Map.Entry entry : Map.entrySet()) {
+        for (hMap.Entry entry : hMap.entrySet()) {
             System.out.println(entry.getKey() + " " + entry.getValue());
         }
 
-        ArrayList<Map.Entry<Integer, Integer>> list1 = new ArrayList<>(hashMap.entrySet());
+        ArrayList<Map.Entry<Integer, Integer>> list1 = new ArrayList<>(hMap.entrySet());
         
     	Collections.sort(list1, new Comparator<Map.Entry<Integer, Integer>>()
         {
